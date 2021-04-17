@@ -13,6 +13,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               title
               slug
+              images {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
             }
           }
         }

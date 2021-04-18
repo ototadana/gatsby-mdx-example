@@ -6,3 +6,4 @@ gatsby-plugin-mdx の利用例です。
 
 *   [GatsbyでMDXを使う](https://knowledge-swimmer.com/gatsby-mdx)
 *   [Gatsbyでスライドショー](https://knowledge-swimmer.com/gatsby-slideshow)
+*   [【Gatsby】MDX記事一覧作成](https://knowledge-swimmer.com/gatsby-mdx-index)

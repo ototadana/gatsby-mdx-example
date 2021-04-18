@@ -18,6 +18,15 @@ export const pageQuery = graphql`
       frontmatter {
         title
         slug
+        images {
+          childImageSharp {
+            gatsbyImageData(
+              width: 300
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
       }
     }
   }

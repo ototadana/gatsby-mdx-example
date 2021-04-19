@@ -1,13 +1,21 @@
 import React from "react"
 import { graphql } from "gatsby"
-import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
+import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
+import styled from "@emotion/styled"
+
+const BlogContainer = styled.div`
+  padding: 10px;
+`
+
+const Title = styled.h1`
+  border-bottom: 1px solid gray;
+`
 
 const Blog = ({ data }) => (
-  <>
-    <h1>{data.mdx.frontmatter.title}</h1>
-    <hr/>
+  <BlogContainer>
+    <Title>{data.mdx.frontmatter.title}</Title>
     <MDXRenderer frontmatter={data.mdx.frontmatter}>{data.mdx.body}</MDXRenderer>
-  </>
+  </BlogContainer>
 )
 export default Blog
 
